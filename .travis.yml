@@ -1,8 +1,9 @@
-language: python
+language: shell
 os: osx
 osx_image: xcode11.2
 install:
   - pip3 install --upgrade pip
   - pip3 install -r requirements.txt
 script:
-  - python3 pytest
+  - python3 -v
+  - pip3 list
