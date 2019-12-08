@@ -9,3 +9,4 @@ script:
   - pip3 list
   - echo "Saving Key To File"
   - echo "$GOOGLE_APPLICATION_CREDENTIALS" > credentials.key
+  - cat credentials.key
