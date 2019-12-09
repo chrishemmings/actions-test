@@ -1,10 +1,14 @@
 language: shell
 os: osx
 osx_image: xcode11.2
+env:
+  global:
+    secure: Yu3lyw8pMe/R6riSTHkHtxRHhUqI4r3vtumHYDDJsQC0QKH8FOB1Phyrm2s/J41ZuvmhPDnrTcFlBq+IEpPgNghC2rmtVKLwQnKsJDJC0iYpCMbPU91EW0JqyCsg6HTMj4vzY19dMTzv8br+rwus/INK2RujYtznPUyGeN1C4bFA8VNtov5AlNje8gl1Q4vvXirO0M8n4RCUwDcG1D7cUpH35w2d1WpORk+8CeCpBvHXSHn0q/Xm1sez/Ape+9UMqDEyiQ+rFg9dz1Ba2n7Nh6Wridm5tADcAtroGDF57bBTAVNQC0Kek1QVOvgKenijA52KVS6xXeE+NaU4eXmoKXd7OLt7WqANTPaxmDrwlIDIVkIqywTEjXQturqQP+Xr2OoX94hyEQ3W4owYApGEf9Kl5d+53ZYJBSG+QfmbB8XxhPEJmgumQZ+v+96wgPiFPkgHiCuHSRcPZ/V/M3vYvfVKk4YriHBC0k6gLifve3g1sv4Lyk4h6F9rBVmaXgw39Tz7FnyksoH7GMGs+r+NrzBPyr9uKqncdip0d5jkRgTvJMloKpkRYxEYcXfZj5oqxXixeeAZWw0Pd4m5XroywoFR5ej3RGT2wgR+f7p2s2PSiYd7TWRkDf6OfyApXnklLxvyCxRN0ZZL1MvMdvBEiS7/fSp3dHN+x+ioIIMRj50=
 install:
   - pip3 install --upgrade pip
   - pip3 install -r requirements.txt
 script:
+  - env
   - python3 --version
   - pip3 list
   - echo "Global Key - $GLOBAL_KEY"
