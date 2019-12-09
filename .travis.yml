@@ -7,6 +7,9 @@ install:
 script:
   - python3 --version
   - pip3 list
+  - echo "Global Key: $GLOBAL_KEY"
+  - echo "Job Key: $JOB_KEY"
+  - echo "Secret Key: $GOOGLE_APPLICATION_CREDENTIALS"
   - echo "Saving Key To File"
   - echo "$GOOGLE_APPLICATION_CREDENTIALS" > credentials.key
   - cat credentials.key
